@@ -19,6 +19,7 @@ public class FreemarkerController {
         ResponseEntity<Map> forEntity = restTemplate.getForEntity("http://localhost:31001/cms/config/getmodel/5a791725dd573c3574ee333f", Map.class);
         Map body = forEntity.getBody();
         map.putAll(body);
+        System.out.println();
         return "index_banner";
     }
 }
