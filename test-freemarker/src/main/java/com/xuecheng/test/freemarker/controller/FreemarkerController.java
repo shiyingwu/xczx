@@ -20,6 +20,7 @@ public class FreemarkerController {
         Map body = forEntity.getBody();
         map.putAll(body);
         System.out.println();
+        System.out.println();
         return "index_banner";
     }
 }
